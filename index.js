@@ -39,3 +39,49 @@ function addTeamMember() {
             }
         });
 }
+
+
+// --- EMPLOYEE CREATION FUNCTIONS --- //
+
+//            MANAGER               //
+
+function addManager() {
+    inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is the name of the team manager?'
+        },
+
+        {
+            type: 'input',
+            name: 'id',
+            message: 'What is the Employee ID of the team manager?'
+        },
+
+        {
+            type: 'input',
+            name: 'email',
+            message: "What is the team manager's email?"
+        },
+
+        {
+            type: 'input',
+            name: 'officeNumber',
+            message: 'What is the office number of the team manager?'
+        }
+
+    ])
+    .then((response) => {
+        const manager = new Manager(response.name, response.id, response.email, response.officeNumber);
+        team.push(manager);
+        addTeamMember();
+    })
+}
+
+
+//          ENGINEER            //
+
+function addEngineer() {
+    
+}
