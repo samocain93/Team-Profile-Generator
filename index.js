@@ -115,4 +115,37 @@ function addEngineer() {
     })
 }
 
-//
+//          INTERN          //
+
+function addIntern() {
+    inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is the name of the intern?'
+        },
+
+        {
+            type: 'input',
+            name: 'id',
+            message: 'What is the Employee ID of the intern?'
+        },
+
+        {
+            type: 'input',
+            name: 'email',
+            message: "What is the intern's email address?"
+        },
+
+        {
+            type: 'input',
+            name: 'school',
+            message: "What is the name of the school the intern is currently attending?"
+        }
+    ])
+    .then((response) => {
+        const intern = new Intern(response.name, response.id, response.email, response.school);
+        team.push(intern);
+        addTeamMember();
+    })
+}
