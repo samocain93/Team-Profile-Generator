@@ -83,5 +83,36 @@ function addManager() {
 //          ENGINEER            //
 
 function addEngineer() {
-    
+    inquirer.prompt([
+        {
+            type: 'input',
+            name: 'name',
+            message: 'What is the name of the engineer?'
+        },
+
+        {
+            type: 'input',
+            name: 'id',
+            message: 'What is the Employee ID of the engineer?'
+        },
+
+        {
+            type: 'input',
+            name: 'email',
+            message: "What is the engineer's email address?"
+        },
+
+        {
+            type: 'input',
+            name: 'github',
+            message: "What is the engineer's GitHub username?"
+        }
+    ])
+    .then((response) => {
+        const engineer = new Engineer(response.name, response.id, response.email, response.github);
+        team.push(engineer);
+        addTeamMember();
+    })
 }
+
+//
