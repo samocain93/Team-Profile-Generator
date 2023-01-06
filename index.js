@@ -150,6 +150,16 @@ function addIntern() {
     })
 }
 
+
+//          BUILD TEAM          //
+
+function buildTeam() {
+
+}
+
+
+
+
 function start() {
     addManager();
 }
