@@ -25,7 +25,7 @@ function addTeamMember() {
                 type: 'list',
                 name: 'teamMember',
                 message: 'Add an engineer, intern, or finish setting up your team',
-                choices: ['Engineer', 'Intern', 'Build My Team']
+                choices: ['Engineer', 'Intern', 'Finish and build my team']
 
             }
         ])
@@ -149,3 +149,9 @@ function addIntern() {
         addTeamMember();
     })
 }
+
+function start() {
+    addManager();
+}
+
+start();
