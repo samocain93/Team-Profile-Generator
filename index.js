@@ -2,6 +2,12 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
+const managerCard = require('./src/manager-card');
+const engineerCard = require('./src/engineer-card');
+const internCard = require('./src/intern-card');
+const body = require('./src/team-body');
+
+
 
 
 // EMPLOYEE LIBRARIES //
@@ -154,6 +160,19 @@ function addIntern() {
 //          BUILD TEAM          //
 
 function buildTeam() {
+    console.log(team);
+    let cards = '';
+    for (let i = 0; i < team.length; i++) {
+        if (team[i].getRole() === 'Manager') {
+            cards+= managerCard(team[i]);
+        } else if (team[i].getRole() === 'Engineer') {
+            cards += engineerCard(team[i]);
+        } else {
+            cards += internCard(team[i]);
+        }
+    }
+
+    fs.writeFileSync('./dist/myteam.html', body(cards))
 
 }
 
