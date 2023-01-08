@@ -14,66 +14,84 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/dist/style.css" />
 
     <title>My Team</title>
   </head>
-  <body class="bg-light">
+
+  <body class="bg-light body">
     <div class="container-fluid">
       <div class="row">
         <header class="header bg-danger text-white p-5 text-center mb-5">
-          <h1>My Team</h1>
+          <h1><i class="fa-solid fa-house"></i> My Team</h1>
         </header>
       </div>
     </div>
 
     <main>
-      <div class="container d-flex col-12 justify-content-around">
-        <div class="card col-3 m-3 mb-5 employee-card shadow-lg">
-          <div class="card-header employee-header bg-primary">
-            <h3 class="card-title p-1">Michael Scott</h3>
-            <h5 class="card-subtitle">
-              <i class="fa-solid fa-mug-saucer"></i> Manager
-            </h5>
+      <div class="row">
+        <div class="container d-flex flex-wrap col-12 justify-content-around">
+          <div class="card col-3 m-3 mb-5 employee-card shadow-lg">
+            <div class="card-header employee-header bg-primary">
+              <h3 class="card-title p-1">Michael Scott</h3>
+              <h5 class="card-subtitle">
+                <i class="fa-solid fa-mug-saucer"></i> Manager
+              </h5>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-group list-group-flush bg-white">
+                <li class="list-group-item">Employee ID: 100</li>
+                <li class="list-group-item">
+                  Email Address:
+                  <a href="mailto:michael@scott.com">michael@scott.com</a>
+                </li>
+                <li class="list-group-item">Office number: 1</li>
+              </ul>
+            </div>
           </div>
-          <div class="card-body bg-light">
-            <ul class="list-group list-group-flush bg-white">
-              <li class="list-group-item">Employee ID: 100</li>
-              <li class="list-group-item">Email Address: <a href="mailto:samocain93@gmail.com">samocain93@gmail.com</a></li>
-              <li class="list-group-item">Office number: 1</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="card col-3 m-3 mb-5 employee-card shadow-lg">
-          <div class="card-header employee-header bg-primary">
-            <h3 class="card-title p-1">Kevin Flanagan</h3>
-            <h5 class="card-subtitle">
-              <i class="fa-brands fa-github"></i> Engineer
-            </h5> 
+          <div class="card col-3 m-3 mb-5 employee-card shadow-lg">
+            <div class="card-header employee-header bg-primary">
+              <h3 class="card-title p-1">Kevin Flanagan</h3>
+              <h5 class="card-subtitle">
+                <i class="fa-brands fa-github"></i> Engineer
+              </h5>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-group list-group-flush bg-white">
+                <li class="list-group-item">Employee ID: 200</li>
+                <li class="list-group-item">
+                  Email Address:
+                  <a href="mailto:kevin@fakemail.com">kevin@fakemail.com</a>
+                </li>
+                <li class="list-group-item">
+                  GitHub Username:
+                  <a href="https://github.com/kevinaok25" target="_blank"
+                    >kevinaok25</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="card-body bg-light">
-            <ul class="list-group list-group-flush bg-white">
-              <li class="list-group-item">Employee ID: 200</li>
-              <li class="list-group-item">Email Address: <a href="mailto:kevin@fakemail.com">kevin@fakemail.com</a></li>
-              <li class="list-group-item">GitHub Username: hello@github.com</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="card col-3 m-3 mb-5 employee-card shadow-lg">
-          <div class="card-header employee-header bg-primary">
-            <h3 class="card-title p-1">Ryan Baker</h3>
-            <h5 class="card-subtitle">
-              <i class="fa-solid fa-user"></i> Intern
-            </h5>
-          </div>
-          <div class="card-body bg-light">
-            <ul class="list-group list-group-flush bg-white">
-              <li class="list-group-item">Employee ID: 300</li>
-              <li class="list-group-item">Email Address: <a href="mailto:ryan@me.com">ryan@me.com</a></li>
-              <li class="list-group-item">School: Florida State University</li>
-            </ul>
+          <div class="card col-3 m-3 mb-5 employee-card shadow-lg">
+            <div class="card-header employee-header bg-primary">
+              <h3 class="card-title p-1">Ryan Baker</h3>
+              <h5 class="card-subtitle">
+                <i class="fa-solid fa-user"></i> Intern
+              </h5>
+            </div>
+            <div class="card-body bg-light">
+              <ul class="list-group list-group-flush bg-white">
+                <li class="list-group-item">Employee ID: 300</li>
+                <li class="list-group-item">
+                  Email Address: <a href="mailto:ryan@me.com">ryan@me.com</a>
+                </li>
+                <li class="list-group-item">
+                  School: Florida State University
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
