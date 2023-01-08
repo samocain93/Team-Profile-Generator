@@ -1,43 +1,42 @@
+
 function teamBody(cards) {
     return `
     <!DOCTYPE html>
     <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/cab1bce42c.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+          src="https://kit.fontawesome.com/cab1bce42c.js"
+          crossorigin="anonymous"
+        ></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="/dist/style.css" />
     
         <title>My Team</title>
-    </head>
-    <body>
+      </head>
     
-    <header>
-        <h1>My Team</h1>
-    </header>
+      <body class="bg-light body">
+        <div class="container-fluid">
+          <div class="row">
+            <header class="header bg-danger text-white p-5 text-center mb-5">
+              <h1><i class="fa-solid fa-house"></i> My Team</h1>
+            </header>
+          </div>
+        </div>
     
-    <main>
+        <main>
         ${cards}
-    </main>
-    
-
-</body>
-</html>
+        </main>
+        </body>
+      </html>
     `
 }
-
-
 
 module.exports = teamBody;
-
-
-
-
-
-function teamBody(cards) {
-    return `
-        
-    `
-}
