@@ -1,5 +1,5 @@
-const Engineer = require('../lib/Employee')
-const engineer = new Engineer('Tom Segura', 50, 'tommybunz@gmail.com', 'tsegura@github.com' )
+const Engineer = require('../lib/Engineer')
+const engineer = new Engineer('Tom Segura', 50, 'tommybunz@gmail.com', 'tsegura' )
 
 describe('engineer', () => {
     describe('tests all employee properties', () => {
@@ -13,13 +13,13 @@ describe('engineer', () => {
             expect(engineer.email).toEqual('tommybunz@gmail.com');
         })
         it('tests github property', () => {
-            expect(engineer.github).toEqual('tsegura@github.com');
+            expect(engineer.github).toEqual('tsegura');
         })
     })
-    describe('test all engineers methods', () => {
+    describe('test all engineer methods for constructor', () => {
      
         it('tests getGithub method', () => {
-            expect (engineer.getGithub()).toEqual('tsegura@github.com');
+            expect (engineer.getGithub()).toEqual('tsegura');
         })
         it('tests getRole method', () => {
             expect (engineer.getRole()).toEqual('Engineer');
