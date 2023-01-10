@@ -1,7 +1,7 @@
 const Manager = require('../lib/Manager')
 const manager = new Manager('Bobby Lee', 99, 'bobbylee@hello.com', 'B200')
 
-dscribe("manager", () => {
+describe("manager", () => {
     describe('tests properties of Manger constructor', () => {
         it ('tests name property', () => {
             expect (manager.name).toEqual('Bobby Lee')
