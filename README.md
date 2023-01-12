@@ -54,7 +54,7 @@ To run and test this application, the following programs/libraries will need to 
 
 ## Walkthrough
 ---
-
+![Walkthrough Demo](./assets/videos/walkthrough/demo.webm)
 
 ## Credits
 ---
