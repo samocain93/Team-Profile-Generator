@@ -2,7 +2,7 @@
 
 
 ## Description
----
+
 A Node.js command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person and their given role within the team.
 
 - This application uses the CLI in Node and begins by asking various prompts to the user, beginning with the manager of a team, followed by the option to add engineers or interns. Upon completion of the prompts, an HTML page will be generated displaying card items along with the corresponding information for each team member.
@@ -20,7 +20,6 @@ so that I have quick access to their emails and GitHub profiles
 
 
 ## Table of Contents
----
 
 - [Installation](#installation)
 - [Screenshot](#screenshot)
@@ -32,7 +31,6 @@ so that I have quick access to their emails and GitHub profiles
 
 
 ## Installation
----
 
 To run and test this application, the following programs/libraries will need to be included in your local workspace:  
 - [Node.js](https://nodejs.org/en/)
@@ -41,20 +39,18 @@ To run and test this application, the following programs/libraries will need to 
 
 
 ## Screenshot
----
 
 
 
 
 ## Usage
----
 
 
 
 
 ## Walkthrough
----
-![Walkthrough Demo](./assets/videos/walkthrough/demo.webm)
+
+[Walkthrough Demo Video](https://drive.google.com/file/d/1t2hL8FvgTWx1YgYEB6wGaW9imHs9Ca27/view?usp=share_link)  
 
 ## Credits
 ---
