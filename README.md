@@ -15,8 +15,8 @@ so that I have quick access to their emails and GitHub profiles
 ### What I Learned
 - More in depth experience using Inquirer prompts and generating info to a page
 - Implementing Test Driven Development using the Jest testing packages
-- Deeper file structuing of my code
-- Continued practice and devlopment with Object Oriented Programming
+- Deeper file structuring of my code
+- Continued practice and development with Object Oriented Programming
 
 
 ## Table of Contents
